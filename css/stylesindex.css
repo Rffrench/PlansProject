@@ -1,0 +1,16 @@
+
+
+#main-cover{
+    position: relative;
+}
+
+#main-cover-background{
+    height: 100px;
+    background-color: red;
+}
+
+#main-cover-content{
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+}
