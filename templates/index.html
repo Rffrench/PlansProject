@@ -7,10 +7,18 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="Antivirus website">
-
     <title>Antivirus Website</title>
+
     <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/stylesindex.css">
+    <link rel="stylesheet" href="/css/mqsstylesindex.css">
+    <link rel="stylesheet" href="/css/mqsbase.css"> <!-- Media queries for base html -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+    <!--Google Fonts-->
+
+    <script src="/js/base.js"></script>
     <script src="https://kit.fontawesome.com/3178762777.js" crossorigin="anonymous"></script> <!-- ICONS -->
 
 </head>
@@ -18,58 +26,127 @@
 <body>
 
     <div id="container">
-        <header id="topmenu" role="menu">
-            <div id="logo">
-                <a href="/templates/index.html"><img src="/media/logo.png">AV</a>
+        <header id="topmenu" role="menu"> <!-- Top bar -->
+
+            <div class="mobile-menu"> <!-- Menu icon for screens under 800px -->
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
             </div>
 
-            <nav id="pages">
+            <div id="mobile-menu-pages">
+                    <a href="/templates/index.html">Home</a>
+                    <a href="#">Products</a>
+                    <a href="#">About</a>
+                    <a href="/templates/plans.html">Plans</a>
+                    <a href="/templates/login.html">Login</a>
+            
+            </div>
+
+            <div id="mobile-plans-icon">
+                    <a href="/templates/plans.html"><i class="fas fa-file-signature"></i></a>
+            </div>
+
+            <div id="logo">
+                <a href="/templates/index.html"><img src="/media/logo.png"></a>
+            </div>
+
+            <div id="mobile-login-icon">
+                    <a href="/templates/login.html"><i class="fas fa-user"></i></a>
+            </div>
+
+            <nav id="menu-pages"> <!-- Main links -->
                 <a href="/templates/index.html">Home</a>
                 <a href="#">Products</a>
                 <a href="#">About</a>
             </nav>
 
-            <nav id="main-pages">
-                <a href="/templates/plans.html">Plans</a>
-                <a href="/templates/login.html"><i class="fas fa-user"></i>Login</a>
+            <nav id="menu-main-pages"> <!-- Main buttons -->
+                <a href="/templates/plans.html" id="btn-plans"><i class="fas fa-file-signature"></i>Plans</a>
+                <a href="/templates/login.html" id="btn-login"><i class="fas fa-user"></i>Login</a>
             </nav>
         </header>
 
         <section id="main-cover">
-            <div id="main-cover-background"></div>
             <div id="main-cover-content">
-                <h1>We have the best Antivirus of the market</h1>
+                <h1>We have the best Antivirus of the galaxy</h1>
+                <p>Check out our variety of plans. Your wallet will be grateful</p>
                 <a href="/templates/plans.html">Choose a Plan</a>
             </div>
         </section>
 
         <section id="main-content">
+            <h1>Main Features</h1>
             <div class="main-feature">
                 <div class="main-feature-content">
-                    <h2>Protection against all threats with our service</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ridiculus urna aptent tellus scelerisque himenaeos posuere, tristique habitasse eros semper nisi curabitur ad donec massa ligula id egestas. Turpis montes venenatis litora velit volutpat fermentum elementum vivamus sed, nam vel libero faucibus vulputate curae morbi sodales, suscipit dui ornare torquent ultricies class posuere sociis</p>
+                    <h2>Protection against all threats with our premium service. <br> Feel safe at all times.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ridiculus urna aptent tellus scelerisque
+                        himenaeos posuere, tristique habitasse eros semper nisi curabitur ad donec massa ligula id
+                        egestas. Turpis montes venenatis litora velit volutpat fermentum elementum vivamus sed, nam vel
+                        libero faucibus vulputate curae morbi sodales, suscipit dui ornare torquent ultricies class
+                        posuere sociis.
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit ridiculus urna aptent tellus scelerisque
+                        himenaeos posuere, tristique habitasse eros semper nisi curabitur ad donec massa ligula id
+                        egestas. Turpis montes venenatis litora velit volutpat fermentum elementum vivamus sed, nam vel
+                        libero faucibus vulputate curae morbi sodales, suscipit dui ornare torquent ultricies class
+                        posuere sociis</p>
                 </div>
-                <i class="fas fa-globe"></i>
+                <div class="main-feature-img">
+                    <img src="/media/feature1.png">
+                </div>
+            </div>
+
+            <div class=" main-feature">
+                <div class="main-feature-content">
+                    <h2>Forget about remembering dozens of passwords<br> Password vault included.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ridiculus urna aptent tellus
+                        scelerisque
+                        himenaeos posuere, tristique habitasse eros semper nisi curabitur ad donec massa ligula id
+                        egestas. Turpis montes venenatis litora velit volutpat fermentum elementum vivamus sed, nam
+                        vel
+                        libero faucibus vulputate curae morbi sodales, suscipit dui ornare torquent ultricies class
+                        posuere sociis.
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit ridiculus urna aptent tellus
+                        scelerisque
+                        himenaeos posuere, tristique habitasse eros semper nisi curabitur ad donec massa ligula id
+                        egestas. Turpis montes venenatis litora velit volutpat fermentum elementum vivamus sed, nam
+                        vel
+                        libero faucibus vulputate curae morbi sodales, suscipit dui ornare torquent ultricies class
+                        posuere sociis</p>
+                </div>
+                <div class="main-feature-img">
+                    <img src="/media/feature2.jpg">
+                </div>
             </div>
         </section>
 
-        <footer>
+        <footer id="main-footer">
 
-                <nav id="footer-pages">
-                    <a href="#">About</a>
-                    <a href="#">Jobs</a>
-                    <a href="#">Terms & Conditions</a>
-                    <a href="#">FAQ</a>
-                </nav>
-                 <h6>All rights reserved &#169;</h6>
-             <div id="contact-info">
-                 <h3>Contact us:</h3>
-                 <address>
-                     <a href="mailto:example@antivirus.com"><i class="fas fa-envelope"></i>example@antivirus.com</a>
-                     <a href="tel:+13115552368"><i class="fas fa-phone-alt"></i>(311) 555-2368</a>
-                 </address>
-             </div>
-                 
+            <nav id="footer-pages">
+                <a href="#">About</a>
+                <a href="#">Jobs</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">FAQ</a>
+            </nav>
+
+
+
+            <div id="contact-info">
+                <h3>Contact us:</h3>
+                <address>
+                    <a href="mailto:example@antivirus.com"><i class="fas fa-envelope"></i>example@antivirus.com</a>
+                    <a href="tel:+13115552368"><i class="fas fa-phone-alt"></i>(311) 555-2368</a>
+                </address>
+            </div>
+
+            <div id="footer-info">
+                <h6>All rights reserved &#169;</h6>
+                <h5>Templates designed by Roberto Ffrench-Davis.</h5> <h5><i class="fab fa-github"></i>Github: Rffrench</h5>
+                
+            </div>
+
         </footer>
 
     </div>
