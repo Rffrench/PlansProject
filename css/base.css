@@ -9,6 +9,48 @@ a:focus {
     outline: 1px dashed blue;
 }
 
+input[type="radio"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: 0.2s all linear;
+}
+
+input[type="radio"]:checked {
+    border: 6px solid rgb(1, 1, 97);
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    padding: 6px;
+    border: 2px solid rgb(1, 1, 97);
+}
+
+input[type="checkbox"]:checked {
+    background: url("/media/correct-symbol.svg") center / contain no-repeat;
+    border: 3px solid rgb(1, 1, 97);
+    
+}
+
+.intext-links{ /* Links that will be used inside text like future paragraphs, blog posts, terms and conditions, etc */
+    color: rgb(10, 7, 212);
+    text-decoration: none;
+}
+
+.intext-links:hover{
+    text-decoration: underline solid rgb(1, 1, 97);
+    
+}
+
 
 
 #topmenu {
@@ -48,6 +90,7 @@ a:focus {
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 5px gray;
     position: absolute;
 }
 
@@ -70,7 +113,7 @@ a:focus {
     background-color: black;
     border-radius: 4px;
     margin: 8px 0;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 
 .mobile-menu-close .bar1 {
@@ -131,7 +174,7 @@ a:focus {
 }
 
 #menu-main-pages a {
-    margin: 2% 3%;
+    margin: 1.5% 3%;
     padding: 0% 12%;
     border-radius: 30px;
     box-shadow: #999 1px 1px 5px;
@@ -150,14 +193,6 @@ a:focus {
     margin-right: 20px;
 }
 
-#btn-plans:active {
-    background: rgb(6, 10, 201);
-}
-
-#btn-login:active {
-    background: rgba(148, 147, 147, 0.322);
-}
-
 #btn-plans {
     color: white;
     background: linear-gradient(rgb(0, 123, 223), rgb(30, 34, 245));
@@ -170,7 +205,16 @@ a:focus {
     border-color: rgb(10, 7, 212);
 }
 
+#btn-plans:active {
+    background: rgb(6, 10, 201);
+}
+
+#btn-login:active {
+    background: rgba(148, 147, 147, 0.322);
+}
+
 #main-footer {
+    
     padding: 1%;
     background-color: rgb(247, 247, 247);
     border-top: 1px solid rgb(211, 211, 211);
@@ -220,6 +264,7 @@ a:focus {
 #contact-info address a {
     color: rgb(37, 37, 37);
     text-decoration: none;
+    
 }
 
 #contact-info address i {
@@ -236,5 +281,9 @@ a:focus {
 }
 
 #footer-info h6 {
+    margin: 0 1%;
+}
+
+#footer-info h5{
     margin: 0 1%;
 }
