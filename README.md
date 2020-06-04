@@ -1,7 +1,7 @@
 # PlansProject
 
 
-This is an HTML/CSS tiny website with just 2 pages that simulates an Antivirus company. Note that this project has some things coded in a way that I would not apply nowadays that I've got more experience and knowledge.
+This is an HTML/CSS/JS tiny website with just 2 pages that simulates an Antivirus company. Note that this project has some things coded in a way that I would not apply nowadays that I've got more experience and knowledge.
 
 ### First Page
 
